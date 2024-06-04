@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="MainMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="best.unieats.menu_user.DetailsCompte_Controller">
+    <children>
+      <AnchorPane prefHeight="50.0" prefWidth="1280.0">
+         <children>
+            <Rectangle id="mainRectangle" arcWidth="40" fill="#db4249" height="52.0" width="1280.0" />
+            <Button fx:id="btn3Bars" layoutX="7.0" layoutY="6.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="140.0" style="-fx-background-radius: 50;" styleClass="hover-button" stylesheets="@Style.CSS" text="MENU" textFill="#274583">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="33.0">
+                     <image>
+                        <Image url="@3bars.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Poppins Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnProfile" layoutX="1221.0" layoutY="4.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="48.0" style="-fx-background-radius: 110;" styleClass="hover-button" stylesheets="@Style.CSS" />
+            <ImageView fitHeight="44.0" fitWidth="48.0" layoutX="1221.0" layoutY="4.0">
+               <image>
+                  <Image url="@Pro.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="50.0" arcWidth="40.0" fill="#2e3b58" height="41.0" layoutX="1017.0" layoutY="6.0" width="186.0" />
+            <Label layoutX="1168.0" layoutY="13.0" text="DH" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Sold" layoutX="1092.0" layoutY="13.0" prefHeight="27.0" prefWidth="65.0" text="Sold" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="1032.0" layoutY="9.0">
+               <image>
+                  <Image url="@Walet.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+
+
+        <ImageView fitHeight="140.0" fitWidth="140.0" layoutX="444.0" layoutY="247.0">
+            <image>
+                <Image url="@biryani.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="1157.0" layoutY="294.0" rotate="10.0">
+            <image>
+                <Image url="@donut.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="145.0" fitWidth="145.0" layoutX="155.0" layoutY="90.0" rotate="-13.0">
+            <image>
+                <Image url="@fast-food (1).png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="135.0" fitWidth="135.0" layoutX="299.0" layoutY="293.0" rotate="-90.0">
+            <image>
+                <Image url="@fried-chicken.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="160.0" fitWidth="160.0" layoutX="1163.0" layoutY="603.0" rotate="-25.0">
+            <image>
+                <Image url="@fried-potatoes.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="162.0" layoutY="450.0" rotate="-21.0">
+            <image>
+                <Image url="@pizza.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="140.0" fitWidth="140.0" layoutX="884.0" layoutY="434.0" rotate="15.0">
+            <image>
+                <Image url="@ramen.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="145.0" fitWidth="145.0" layoutX="1013.0" layoutY="90.0" rotate="20.0">
+            <image>
+                <Image url="@taco.png" />
+            </image>
+        </ImageView>
+      <ImageView fitHeight="160.0" fitWidth="160.0" layoutX="-46.0" layoutY="599.0" rotate="25.0">
+         <image>
+            <Image url="@coke.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="375.0" layoutY="-7.0" prefHeight="734.0" prefWidth="531.0">
+         <children>
+            <Rectangle arcHeight="40.0" arcWidth="40.0" disable="true" fill="#dd4148" height="615.0" layoutX="6.0" layoutY="85.0" width="520.0" />
+            <Button fx:id="updatepassword" alignment="CENTER" layoutX="227.0" layoutY="500.0" mnemonicParsing="false" onAction="#handleUpdateButtons" prefHeight="32.0" prefWidth="31.0" styleClass="hover-button" stylesheets="@StyleButtonRed.CSS" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+               <effect>
+                  <Blend />
+               </effect>
+               <opaqueInsets>
+                  <Insets right="50.0" />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="updateusername" alignment="CENTER" layoutX="480.0" layoutY="412.0" mnemonicParsing="false" onAction="#handleUpdateButtons" prefHeight="32.0" prefWidth="31.0" styleClass="hover-button" stylesheets="@StyleButtonRed.CSS" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+               <effect>
+                  <Blend />
+               </effect>
+               <opaqueInsets>
+                  <Insets right="50.0" />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="updatetéléphone" alignment="CENTER" layoutX="227.0" layoutY="411.0" mnemonicParsing="false" onAction="#handleUpdateButtons" prefHeight="32.0" prefWidth="31.0" styleClass="hover-button" stylesheets="@StyleButtonRed.CSS" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+               <effect>
+                  <Blend />
+               </effect>
+               <opaqueInsets>
+                  <Insets right="50.0" />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="updateadresse" alignment="CENTER" layoutX="480.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleUpdateButtons" prefHeight="32.0" prefWidth="31.0" styleClass="hover-button" stylesheets="@StyleButtonRed.CSS" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+               <effect>
+                  <Blend />
+               </effect>
+               <opaqueInsets>
+                  <Insets right="50.0" />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="updatemail" alignment="CENTER" layoutX="228.0" layoutY="317.0" mnemonicParsing="false" onAction="#handleUpdateButtons" prefHeight="32.0" prefWidth="31.0" styleClass="hover-button" stylesheets="@StyleButtonRed.CSS" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+               <effect>
+                  <Blend />
+               </effect>
+               <opaqueInsets>
+                  <Insets right="50.0" />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="updateprenom" alignment="CENTER" layoutX="480.0" layoutY="226.0" mnemonicParsing="false" onAction="#handleUpdateButtons" prefHeight="32.0" prefWidth="31.0" styleClass="hover-button" stylesheets="@StyleButtonRed.CSS" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+               <effect>
+                  <Blend />
+               </effect>
+               <opaqueInsets>
+                  <Insets right="50.0" />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="updatenom" alignment="CENTER" layoutX="228.0" layoutY="225.0" mnemonicParsing="false" onAction="#handleUpdateButtons" prefHeight="32.0" prefWidth="31.0" styleClass="hover-button" stylesheets="@StyleButtonRed.CSS" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+               <effect>
+                  <Blend />
+               </effect>
+               <opaqueInsets>
+                  <Insets right="50.0" />
+               </opaqueInsets>
+            </Button>
+            <TextField fx:id="txtfnom" alignment="BASELINE_RIGHT" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="27.0" layoutY="212.0" prefHeight="58.0" prefWidth="200.0" scaleShape="false" style="-fx-border-width: 0.3; -fx-border-radius: 7; -fx-background-radius: 7; -fx-border-color: #000000;">
+               <font>
+                  <Font name="Poppins Light" size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="52.0" layoutY="220.0" text="Nom :">
+               <font>
+                  <Font name="Poppins SemiBold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="16.0" fitWidth="17.0" layoutX="33.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user-solid%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="21.0" layoutX="232.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@editer_1.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtfprenom" alignment="BASELINE_RIGHT" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="279.0" layoutY="213.0" prefHeight="58.0" prefWidth="200.0" scaleShape="false" style="-fx-border-width: 0.3; -fx-border-radius: 7; -fx-background-radius: 7; -fx-border-color: #000000;">
+               <font>
+                  <Font name="Poppins Light" size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="303.0" layoutY="221.0" text=" Prénom :">
+               <font>
+                  <Font name="Poppins SemiBold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="16.0" fitWidth="17.0" layoutX="285.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user-solid%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="21.0" layoutX="484.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@editer_1.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtfmail" alignment="BASELINE_RIGHT" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="27.0" layoutY="304.0" prefHeight="58.0" prefWidth="200.0" scaleShape="false" style="-fx-border-width: 0.3; -fx-border-radius: 7; -fx-background-radius: 7; -fx-border-color: #000000;">
+               <font>
+                  <Font name="Poppins Light" size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="52.0" layoutY="310.0" text="Mail :">
+               <font>
+                  <Font name="Poppins SemiBold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="16.0" fitWidth="17.0" layoutX="33.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@1a.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="21.0" layoutX="232.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@editer_1.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtfadresse" alignment="BASELINE_RIGHT" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="279.0" layoutY="305.0" prefHeight="58.0" prefWidth="200.0" scaleShape="false" style="-fx-border-width: 0.3; -fx-border-radius: 7; -fx-background-radius: 7; -fx-border-color: #000000;">
+               <font>
+                  <Font name="Poppins Light" size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="304.0" layoutY="313.0" text="Adresse :">
+               <font>
+                  <Font name="Poppins SemiBold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="16.0" fitWidth="17.0" layoutX="285.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@3a.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="21.0" layoutX="484.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@editer_1.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtftéléphone" alignment="BASELINE_RIGHT" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="27.0" layoutY="398.0" prefHeight="58.0" prefWidth="200.0" scaleShape="false" style="-fx-border-width: 0.3; -fx-border-radius: 7; -fx-background-radius: 7; -fx-border-color: #000000;">
+               <font>
+                  <Font name="Poppins Light" size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="52.0" layoutY="405.0" text="Téléphone :">
+               <font>
+                  <Font name="Poppins SemiBold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="16.0" fitWidth="17.0" layoutX="33.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@2a.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="21.0" layoutX="232.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@editer_1.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtfusername" alignment="BASELINE_RIGHT" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="279.0" layoutY="400.0" prefHeight="58.0" prefWidth="200.0" scaleShape="false" style="-fx-border-width: 0.3; -fx-border-radius: 7; -fx-background-radius: 7; -fx-border-color: #000000;">
+               <font>
+                  <Font name="Poppins Light" size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="304.0" layoutY="407.0" text="UserName :">
+               <font>
+                  <Font name="Poppins SemiBold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="16.0" fitWidth="17.0" layoutX="285.0" layoutY="405.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image_user1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="21.0" layoutX="484.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@editer_1.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtfpassword" alignment="BASELINE_RIGHT" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="27.0" layoutY="487.0" prefHeight="58.0" prefWidth="200.0" scaleShape="false" style="-fx-border-width: 0.3; -fx-border-radius: 7; -fx-background-radius: 7; -fx-border-color: #000000;">
+               <font>
+                  <Font name="Poppins Light" size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="52.0" layoutY="494.0" text="Password :">
+               <font>
+                  <Font name="Poppins SemiBold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="17.0" fitWidth="21.0" layoutX="32.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image_pass1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="21.0" layoutX="232.0" layoutY="506.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@editer_1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="savebutton564" alignment="CENTER" cacheShape="false" focusTraversable="false" graphicTextGap="0.0" layoutX="190.0" layoutY="601.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="44.0" prefWidth="140.0" scaleShape="false" style="-fx-background-radius: 20;" styleClass="hover-button" stylesheets="@Style.CSS" text="SAVE" textAlignment="CENTER" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+               <font>
+                  <Font name="Poppins Medium" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets right="50.0" />
+               </opaqueInsets>
+               <effect>
+                  <Blend />
+               </effect>
+            </Button>
+            <Label layoutX="88.0" layoutY="115.0" text="Informations Compte" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="SideMenu1" layoutY="52.0" prefHeight="669.0" prefWidth="276.0" visible="false">
+         <children>
+            <AnchorPane prefHeight="669.0" prefWidth="276.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#db4249" height="670.0" layoutX="-6.0" stroke="#db4249" strokeType="INSIDE" width="280.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e3b58" height="50.0" layoutX="-3.0" stroke="BLACK" strokeType="INSIDE" width="276.0" />
+                  <Button fx:id="btnCommande" alignment="CENTER" cacheShape="false" focusTraversable="false" graphicTextGap="0.0" layoutX="11.0" layoutY="123.0" mnemonicParsing="false" onAction="#lanchCommande" prefHeight="30.0" prefWidth="255.0" scaleShape="false" style="-fx-background-radius: 30;" styleClass="hover-button" stylesheets="@Style.CSS" text="Commande" textAlignment="CENTER" textFill="#f8f8f8" textOverrun="LEADING_ELLIPSIS">
+                     <font>
+                        <Font name="Poppins Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <opaqueInsets>
+                        <Insets right="50.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="btnMenuQuotidien" alignment="CENTER" cacheShape="false" focusTraversable="false" graphicTextGap="0.0" layoutX="11.0" layoutY="79.0" mnemonicParsing="false" onAction="#lanchMenuQuotidien" prefHeight="36.0" prefWidth="255.0" scaleShape="false" style="-fx-background-radius: 30;" styleClass="hover-button" stylesheets="@Style.CSS" text="Menu Quotidien" textAlignment="CENTER" textFill="#f8f8f8" textOverrun="LEADING_ELLIPSIS">
+                     <font>
+                        <Font name="Poppins Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <opaqueInsets>
+                        <Insets right="50.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <Label layoutX="86.0" layoutY="8.0" prefHeight="35.0" prefWidth="105.0" text="Uni Eats" textFill="#e1dbdb">
+                     <font>
+                        <Font name="Poppins Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <Pane fx:id="SideMenu2" layoutX="1007.0" layoutY="52.0" prefHeight="669.0" prefWidth="276.0" visible="false">
+         <children>
+            <AnchorPane prefHeight="669.0" prefWidth="276.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#db4249" height="670.0" layoutX="-6.0" stroke="#db4249" strokeType="INSIDE" width="280.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e3b58" height="50.0" layoutX="-7.0" stroke="BLACK" strokeType="INSIDE" width="280.0" />
+                  <Button fx:id="btnDeconnecter" alignment="CENTER" cacheShape="false" focusTraversable="false" graphicTextGap="0.0" layoutX="11.0" layoutY="617.0" mnemonicParsing="false" onAction="#handleDeconnection" prefHeight="30.0" prefWidth="255.0" scaleShape="false" style="-fx-background-radius: 30;" styleClass="hover-button" stylesheets="@Style.CSS" text="Se Deconnecter" textAlignment="CENTER" textFill="#f8f8f8" textOverrun="LEADING_ELLIPSIS">
+                     <font>
+                        <Font name="Poppins Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <opaqueInsets>
+                        <Insets right="50.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="btnDetails" alignment="CENTER" cacheShape="false" focusTraversable="false" graphicTextGap="0.0" layoutX="11.0" layoutY="79.0" mnemonicParsing="false" onAction="#lanchDetailCompte" prefHeight="30.0" prefWidth="255.0" scaleShape="false" style="-fx-background-radius: 30;" styleClass="hover-button" stylesheets="@Style.CSS" text="  Details Du Compte" textAlignment="CENTER" textFill="#f8f8f8" textOverrun="LEADING_ELLIPSIS">
+                     <font>
+                        <Font name="Poppins Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <opaqueInsets>
+                        <Insets right="50.0" />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+    </children>
+</Pane>

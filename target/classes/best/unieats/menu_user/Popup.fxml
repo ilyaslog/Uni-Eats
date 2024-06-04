@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="best.unieats.sign_up.PrimaryController">
+    <children>
+
+
+        <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="22.0" layoutY="105.0" rotate="18.4">
+            <image>
+                <Image url="@biryani.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="445.0" layoutY="92.0" rotate="10.0">
+            <image>
+                <Image url="@donut.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="1.0" layoutY="-7.0" rotate="-13.0">
+            <image>
+                <Image url="@fast-food (1).png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="418.0" layoutY="-7.0" rotate="30.0">
+            <image>
+                <Image url="@fried-chicken.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="440.0" layoutY="236.0" rotate="-25.0">
+            <image>
+                <Image url="@fried-potatoes.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="94.0" layoutY="188.0" rotate="-21.0">
+            <image>
+                <Image url="@pizza.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="67.0" fitWidth="67.0" layoutX="385.0" layoutY="175.0" rotate="-11.0">
+            <image>
+                <Image url="@ramen.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="253.0" layoutY="220.0" rotate="20.0">
+            <image>
+                <Image url="@taco.png" />
+            </image>
+        </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="-18.0" layoutY="236.0" rotate="25.0">
+         <image>
+            <Image url="@coke.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Confirmer" alignment="CENTER" cacheShape="false" focusTraversable="false" graphicTextGap="0.0" layoutX="129.0" layoutY="127.0" mnemonicParsing="false" onAction="#handlerVerificationCode" prefHeight="36.0" prefWidth="255.0" scaleShape="false" style="-fx-background-color: #2E3B58; -fx-background-radius: 30;" text="Confirmer" textAlignment="CENTER" textFill="#f8f8f8" textOverrun="LEADING_ELLIPSIS">
+         <font>
+            <Font name="Poppins Bold" size="14.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+         <opaqueInsets>
+            <Insets right="50.0" />
+         </opaqueInsets>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e3b58" height="50.0" layoutX="95.0" layoutY="45.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="324.0" />
+      <Label fx:id="Messagedalerte" layoutX="157.0" layoutY="52.0" prefHeight="35.0" prefWidth="200.0" text="Êtes-vous sûr ?" textFill="#e1dbdb">
+         <font>
+            <Font name="Poppins Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="Annuler" alignment="CENTER" cacheShape="false" focusTraversable="false" graphicTextGap="0.0" layoutX="129.0" layoutY="173.0" mnemonicParsing="false" onAction="#handlerVerificationCode" prefHeight="36.0" prefWidth="255.0" scaleShape="false" style="-fx-background-color: #2E3B58; -fx-background-radius: 30;" text="Annuler" textAlignment="CENTER" textFill="#f8f8f8" textOverrun="LEADING_ELLIPSIS">
+         <font>
+            <Font name="Poppins Bold" size="14.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+         <opaqueInsets>
+            <Insets right="50.0" />
+         </opaqueInsets>
+      </Button>
+    </children>
+</Pane>

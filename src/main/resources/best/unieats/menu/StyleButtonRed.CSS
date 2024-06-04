@@ -1,0 +1,16 @@
+/* style.css */
+.hover-button {
+    -fx-background-color: #DD4148;
+    
+}
+
+.hover-button:hover {
+    -fx-background-color: #B43238;
+}
+.hover-label {
+    -fx-text-fill: #03d2ff; 
+}
+
+.hover-label:hover {
+    -fx-text-fill: #eaff00; 
+}

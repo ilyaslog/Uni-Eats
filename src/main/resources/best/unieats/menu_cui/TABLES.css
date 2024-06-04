@@ -1,0 +1,44 @@
+.table-view {
+    -fx-background-color: linear-gradient(to bottom, rgba(42, 99, 221, 0.4), rgba(46, 59, 88, 0.4));
+ }
+ 
+ .table-view:focused{
+     -fx-background-color: transparent;
+ }
+ 
+ .table-view .column-header-background{
+     -fx-background-color: #2e3b58;
+ }
+ 
+ .table-view .column-header-background .label{
+     -fx-background-color: transparent;
+     -fx-text-fill: white;
+ }
+ 
+ .table-view .column-header {
+     -fx-background-color: transparent;
+ }
+ 
+ .table-view .table-cell{
+     -fx-text-fill: black;
+     -fx-font-weight: bold;
+ }
+ 
+ .table-row-cell {
+     -fx-background-color: -fx-table-cell-border-color, white;
+     -fx-background-insets: 0, 0 0 1 0;
+     -fx-padding: 0.0em;
+ }
+ 
+ .table-row-cell:odd {
+     -fx-background-color: -fx-table-cell-border-color,white;
+     -fx-background-insets: 0, 0 0 1 0;
+     -fx-padding: 0.0em;
+ }
+ 
+ 
+ .table-row-cell:selected {
+     -fx-background-color:  #8899A6 ;
+     -fx-background-insets: 0;
+     -fx-background-radius: 1;
+ }

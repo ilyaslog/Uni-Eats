@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="ProductPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="219.0" prefWidth="406.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#f8f9fa" height="219.0" layoutX="1.0" stroke="#ced4da" strokeType="INSIDE" strokeWidth="2.0" width="404.0" />
+        <Label layoutX="12.0" layoutY="20.0" prefHeight="179.0" prefWidth="194.0" text="Image" textFill="#2e3b58">
+            <font>
+                <Font name="Poppins Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="209.0" layoutY="40.0" text="Burger" textFill="#2e3b58">
+            <font>
+                <Font name="Poppins Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="208.0" layoutY="68.0" text="Price: $10" textFill="#6c757d">
+            <font>
+                <Font name="Poppins Light" size="16.0" />
+            </font>
+        </Label>
+
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="220.0" layoutY="103.0">
+            <image>
+                <Image url="@minus.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="339.0" layoutY="103.0">
+            <image>
+                <Image url="@plus.png" />
+            </image>
+        </ImageView>
+        <TextField alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="260.0" layoutY="100.0" prefHeight="30.0" prefWidth="66.0" promptText="Quantity" scaleShape="false" style="-fx-background-radius: 30; -fx-border-color: #000000; -fx-border-width: 1px;-fx-border-radius: 30;">
+            <font>
+                <Font name="Poppins Regular" size="12.0" />
+            </font>
+        </TextField>
+        <Button alignment="CENTER" cacheShape="false" focusTraversable="false" graphicTextGap="0.0" layoutX="206.0" layoutY="146.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="174.0" scaleShape="false" style="-fx-background-color: #2E3B58; -fx-background-radius: 30;" text="ADD" textAlignment="CENTER" textFill="#f8f8f8" textOverrun="LEADING_ELLIPSIS">
+            <font>
+                <Font name="Poppins SemiBold" size="14.0" />
+            </font>
+            <effect>
+                <Blend />
+            </effect>
+            <opaqueInsets>
+                <Insets right="50.0" />
+            </opaqueInsets>
+        </Button>
+    </children>
+</Pane>

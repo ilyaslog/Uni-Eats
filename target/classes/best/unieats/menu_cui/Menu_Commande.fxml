@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="MainMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="best.unieats.menu_cui.MenuComandController">
+    <children>
+
+
+        <ImageView fitHeight="140.0" fitWidth="140.0" layoutX="444.0" layoutY="247.0">
+            <image>
+                <Image url="@biryani.png" />
+            </image>
+        </ImageView>
+      <AnchorPane prefHeight="50.0" prefWidth="1280.0">
+         <children>
+            <Rectangle id="mainRectangle" arcWidth="40" fill="#db4249" height="52.0" width="1280.0" />
+            <Button fx:id="btnDeconnecter" alignment="CENTER" cacheShape="false" focusTraversable="false" graphicTextGap="0.0" layoutX="1108.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleDeconnection" prefHeight="30.0" prefWidth="158.0" scaleShape="false" style="-fx-background-radius: 30;" styleClass="hover-button" stylesheets="@Style.CSS" text="Se Deconnecter" textAlignment="CENTER" textFill="#f8f8f8" textOverrun="LEADING_ELLIPSIS">
+               <font>
+                  <Font name="Poppins Bold" size="14.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+               <opaqueInsets>
+                  <Insets right="50.0" />
+               </opaqueInsets>
+            </Button>
+            <Label fx:id="Datedujour11" layoutX="567.0" layoutY="-16.0" prefHeight="85.0" prefWidth="146.0" text="UniEats" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+
+        <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="1205.0" layoutY="312.0" rotate="10.0">
+            <image>
+                <Image url="@donut.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="160.0" fitWidth="160.0" layoutX="1163.0" layoutY="603.0" rotate="-25.0">
+            <image>
+                <Image url="@fried-potatoes.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="145.0" fitWidth="145.0" layoutX="1027.0" layoutY="96.0" rotate="20.0">
+            <image>
+                <Image url="@taco.png" />
+            </image>
+        </ImageView>
+      <ImageView fitHeight="160.0" fitWidth="160.0" layoutX="-46.0" layoutY="599.0" rotate="25.0">
+         <image>
+            <Image url="@coke.png" />
+         </image>
+      </ImageView>
+      <Pane id="Meals" fx:id="Drinks" layoutX="52.0" layoutY="70.0" prefHeight="636.0" prefWidth="1175.0">
+         <children>
+      
+              <ImageView fitHeight="145.0" fitWidth="145.0" layoutX="91.0" layoutY="27.0" rotate="-16.9">
+                  <image>
+                      <Image url="@fast-food (1).png" />
+                  </image>
+              </ImageView>
+      
+              <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="124.0" layoutY="455.0">
+                  <image>
+                      <Image url="@pizza.png" />
+                  </image>
+              </ImageView>
+      
+              <ImageView fitHeight="135.0" fitWidth="135.0" layoutX="199.0" layoutY="243.0" rotate="-90.0">
+                  <image>
+                      <Image url="@fried-chicken.png" />
+                  </image>
+              </ImageView>
+      
+              <ImageView fitHeight="140.0" fitWidth="140.0" layoutX="850.0" layoutY="318.0" rotate="15.3">
+                  <image>
+                      <Image url="@ramen.png" />
+                  </image>
+              </ImageView>
+            <Button fx:id="Confirmerresep" alignment="CENTER" cacheShape="false" focusTraversable="false" graphicTextGap="0.0" layoutX="376.0" layoutY="515.0" mnemonicParsing="false" onAction="#Confirmerresep" prefHeight="107.0" prefWidth="424.0" scaleShape="false" style="-fx-background-radius: 30;" styleClass="hover-button" stylesheets="@Style.CSS" text="Confirmer la Preparation " textAlignment="CENTER" textFill="#f8f8f8" textOverrun="LEADING_ELLIPSIS">
+               <font>
+                  <Font name="Poppins SemiBold" size="24.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+               <opaqueInsets>
+                  <Insets right="50.0" />
+               </opaqueInsets>
+            </Button>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#2e3b58" height="107.0" layoutX="273.0" layoutY="-8.0" stroke="BLACK" strokeType="INSIDE" width="612.0" />
+            <Label fx:id="Datedujour1" layoutX="351.0" layoutY="-12.0" prefHeight="52.0" prefWidth="468.0" text="La Commande en cours " textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Bold" size="36.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#2e3b58" height="397.0" layoutX="282.0" layoutY="112.0" stroke="BLACK" strokeType="INSIDE" width="612.0" />
+            <Label layoutX="334.0" layoutY="103.0" prefHeight="52.0" prefWidth="516.0" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Bold" size="24.0" />
+               </font>
+            </Label>
+            <TableView fx:id="panier" layoutX="288.0" layoutY="171.0" prefHeight="264.0" prefWidth="592.0" stylesheets="@TABLES.css">
+               <columns>
+                  <TableColumn fx:id="nom" prefWidth="433.0" text="Nom" />
+                  <TableColumn fx:id="quantiter" prefWidth="158.0" text="Quantiter" />
+               </columns>
+            </TableView>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#db4249" height="61.0" layoutX="374.0" layoutY="442.0" stroke="BLACK" strokeType="INSIDE" width="410.0" />
+            <Label layoutX="402.0" layoutY="447.0" prefHeight="52.0" prefWidth="237.0" text="Commande en Attente :" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="EnAttent" layoutX="675.0" layoutY="447.0" prefHeight="52.0" prefWidth="39.0" text="*12" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Datedujour12" layoutX="434.0" layoutY="40.0" prefHeight="52.0" prefWidth="290.0" text="de preparation" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="Numerodecommande" layoutX="377.0" layoutY="112.0" prefHeight="52.0" prefWidth="430.0" text="*N de commande" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="rien" layoutX="191.0" layoutY="87.0" prefHeight="600.0" prefWidth="922.0" visible="false">
+         <children>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#2e3b58" height="513.0" layoutX="145.0" layoutY="95.0" stroke="BLACK" strokeType="INSIDE" width="612.0" />
+            <Label layoutX="212.0" layoutY="245.0" prefHeight="213.0" prefWidth="478.0" text="Aucun Commande n'est enregistrée" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+    </children>
+</Pane>

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="MainMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@your_stylesheet.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="best.unieats.menu_admin.MenuGestionMenuController">
+    <children>
+      <AnchorPane prefHeight="50.0" prefWidth="1280.0">
+         <children>
+            <Rectangle id="mainRectangle" arcWidth="40" fill="#db4249" height="52.0" width="1280.0" />
+            <Button fx:id="btn3Bars" layoutX="7.0" layoutY="6.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="140.0" style="-fx-background-radius: 50;" styleClass="hover-button" stylesheets="@Style.CSS" text="MENU" textFill="#274583">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="33.0">
+                     <image>
+                        <Image url="@3bars.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Poppins Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnProfile" layoutX="1221.0" layoutY="4.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="48.0" style="-fx-background-radius: 110;" styleClass="hover-button" stylesheets="@Style.CSS" />
+            <ImageView fitHeight="44.0" fitWidth="48.0" layoutX="1221.0" layoutY="4.0">
+               <image>
+                  <Image url="@Pro.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="BtnPanier" layoutX="948.0" layoutY="6.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="65.0" style="-fx-background-radius: 50;" styleClass="hover-button" stylesheets="@Style.CSS" textFill="#274583">
+               <font>
+                  <Font name="Poppins Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="34.0">
+                     <image>
+                        <Image url="@Cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Rectangle arcHeight="50.0" arcWidth="40.0" fill="#2e3b58" height="41.0" layoutX="1017.0" layoutY="6.0" width="186.0" />
+            <Label layoutX="1168.0" layoutY="13.0" text="DH" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Sold" layoutX="1092.0" layoutY="13.0" prefHeight="27.0" prefWidth="65.0" text="Sold" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="1032.0" layoutY="9.0">
+               <image>
+                  <Image url="@Walet.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+
+
+        <ImageView fitHeight="140.0" fitWidth="140.0" layoutX="444.0" layoutY="247.0">
+            <image>
+                <Image url="@biryani.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="1149.0" layoutY="300.0" rotate="10.0">
+            <image>
+                <Image url="@donut.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="145.0" fitWidth="145.0" layoutX="233.0" layoutY="102.0" rotate="-13.0">
+            <image>
+                <Image url="@fast-food (1).png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="135.0" fitWidth="135.0" layoutX="883.0" layoutY="129.0" rotate="11.0">
+            <image>
+                <Image url="@fried-chicken.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="160.0" fitWidth="160.0" layoutX="1163.0" layoutY="603.0" rotate="-25.0">
+            <image>
+                <Image url="@fried-potatoes.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="249.0" layoutY="477.0" rotate="-21.0">
+            <image>
+                <Image url="@pizza.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="140.0" fitWidth="140.0" layoutX="865.0" layoutY="387.0" rotate="-11.0">
+            <image>
+                <Image url="@ramen.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="145.0" fitWidth="145.0" layoutX="1027.0" layoutY="96.0" rotate="20.0">
+            <image>
+                <Image url="@taco.png" />
+            </image>
+        </ImageView>
+      <ImageView fitHeight="160.0" fitWidth="160.0" layoutX="-46.0" layoutY="599.0" rotate="25.0">
+         <image>
+            <Image url="@coke.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="10.0" layoutY="62.0" prefHeight="670.0" prefWidth="1280.0">
+         <children>
+            <TableView fx:id="tableplat" layoutX="33.0" layoutY="135.0" prefHeight="468.0" prefWidth="561.0" stylesheets="@TABLES.css">
+               <columns>
+                  <TableColumn fx:id="IDPLAT" prefWidth="75.0" text="ID" />
+                  <TableColumn fx:id="Nomplat" prefWidth="160.0" text="Nom Du Plat" />
+                  <TableColumn fx:id="Desplat" prefWidth="179.0" text="Description" />
+                  <TableColumn fx:id="prixplat" minWidth="0.0" prefWidth="74.0" text="Prix" />
+                  <TableColumn fx:id="quantiplat" prefWidth="72.0" text="Quantiter" />
+               </columns>
+            </TableView>
+            <TableView fx:id="tablemenuquoti" layoutX="704.0" layoutY="340.0" prefHeight="263.0" prefWidth="542.0" stylesheets="@TABLES.css">
+               <columns>
+                  <TableColumn fx:id="idmenu" prefWidth="75.0" text="ID" />
+                  <TableColumn fx:id="nommenuplat" prefWidth="138.0" text="Nom Du Plat" />
+                  <TableColumn fx:id="desmenuplat" prefWidth="188.0" text="Description" />
+                  <TableColumn fx:id="prixmenuplat" prefWidth="71.0" text="Prix" />
+                  <TableColumn fx:id="quantimenuplat" prefWidth="69.0" text="Quantiter" />
+               </columns>
+            </TableView>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#2e3b58" height="107.0" layoutX="359.0" layoutY="7.0" stroke="BLACK" strokeType="INSIDE" width="612.0" />
+           <Label fx:id="Datedujour" alignment="CENTER" layoutX="374.0" layoutY="61.0" prefHeight="52.0" prefWidth="593.0" text="*DATE DU JOUR (DD/MM/YYYY)" textFill="WHITE">
+    <font>
+        <Font name="Poppins Bold" size="36.0" />
+    </font>
+</Label>
+
+            <Label fx:id="Datedujour1" layoutX="426.0" layoutY="7.0" text="Gestion Menu Quotidien" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Bold" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="inmenu" fitHeight="44.0" fitWidth="48.0" layoutX="622.0" layoutY="406.0" rotate="90.0" styleClass="hover-button">
+               <image>
+                  <Image url="@fleche-vers-le-haut.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="outmenu" fitHeight="44.0" fitWidth="48.0" layoutX="622.0" layoutY="493.0" rotate="-90.0" styleClass="hover-button">
+               <image>
+                  <Image url="@fleche-vers-le-haut.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Impri" layoutX="501.0" layoutY="613.0" mnemonicParsing="false" onAction="#printDishesToFile" prefHeight="43.0" prefWidth="312.0" style="-fx-background-radius: 50;" styleClass="hover-button" stylesheets="@Style.CSS" text="Imprimer Menu Quotidient" textFill="#274583">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="33.0">
+                     <image>
+                        <Image url="@3bars.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Poppins Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSave" layoutX="595.0" layoutY="570.0" mnemonicParsing="false" onAction="#insertMenuItemsIntoDatabase" prefHeight="27.0" prefWidth="105.0" style="-fx-background-radius: 50;" styleClass="hover-button" stylesheets="@Style.CSS" text="Save" textFill="#274583">
+               <font>
+                  <Font name="Poppins Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="inbtn" layoutX="621.0" layoutY="416.0" mnemonicParsing="false" onAction="#moveDishToMenu" opacity="0.0" prefHeight="30.0" prefWidth="44.0" text="Button" />
+            <Button fx:id="outbtn" layoutX="621.0" layoutY="503.0" mnemonicParsing="false" onAction="#removeFromMenu" opacity="0.0" text="Button" />
+            <ImageView fx:id="inmenu1" fitHeight="44.0" fitWidth="48.0" layoutX="621.0" layoutY="169.0" rotate="90.0" styleClass="hover-button">
+               <image>
+                  <Image url="@fleche-vers-le-haut.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="outmenu1" fitHeight="44.0" fitWidth="48.0" layoutX="621.0" layoutY="256.0" rotate="-90.0" styleClass="hover-button">
+               <image>
+                  <Image url="@fleche-vers-le-haut.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="inbtn3" layoutX="625.0" layoutY="167.0" mnemonicParsing="false" onAction="#moveDishToProductPanel" opacity="0.0" prefHeight="48.0" prefWidth="44.0" text="Button" />
+            <Button fx:id="outbtn4" layoutX="621.0" layoutY="254.0" mnemonicParsing="false" onAction="#removeFromProductPanel" opacity="0.0" prefHeight="48.0" prefWidth="48.0" text="Button" />
+            <Pane fx:id="ProductPane" layoutX="805.0" layoutY="135.0" prefHeight="174.0" prefWidth="324.0">
+               <children>
+                  <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#f8f9fa" height="174.0" layoutX="4.0" stroke="#ced4da" strokeType="INSIDE" strokeWidth="2.0" width="324.0" />
+                  <ImageView fx:id="Photo" fitHeight="118.0" fitWidth="158.0" layoutX="16.0" layoutY="42.0">
+                     <image>
+                        <Image url="@burger-7419428_640.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="nom1" layoutX="187.0" layoutY="14.0" prefHeight="28.0" prefWidth="123.0" text="Burger" textFill="#2e3b58">
+                     <font>
+                        <Font name="Poppins Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="187.0" layoutY="107.0" text="Prix:" textFill="#6c757d">
+                     <font>
+                        <Font name="Poppins Light" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="desc" layoutX="184.0" layoutY="42.0" prefHeight="65.0" prefWidth="129.0" text="Description" textFill="#6c757d">
+                     <font>
+                        <Font name="Poppins Light" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="247.0" layoutY="107.0" text="    dh" textFill="#6c757d">
+                     <font>
+                        <Font name="Poppins Light" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="prix1" layoutX="223.0" layoutY="107.0" text="**" textFill="#6c757d">
+                     <font>
+                        <Font name="Poppins Light" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="7.0" prefHeight="28.0" prefWidth="140.0" text="Plat Du Jour" textFill="#2e3b58">
+                     <font>
+                        <Font name="Poppins Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="desc1" layoutX="182.0" layoutY="126.0" prefHeight="41.0" prefWidth="80.0" text="Quantiter:" textFill="#6c757d">
+                     <font>
+                        <Font name="Poppins Light" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Quantiter" layoutX="267.0" layoutY="126.0" prefHeight="41.0" prefWidth="20.0" text="**" textFill="#6c757d">
+                     <font>
+                        <Font name="Poppins Light" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="btnSaveDishofday" layoutX="688.0" layoutY="226.0" mnemonicParsing="false" onAction="#saveDishOfDay" prefHeight="27.0" prefWidth="105.0" style="-fx-background-radius: 50;" styleClass="hover-button" stylesheets="@Style.CSS" text="Save" textFill="#274583">
+               <font>
+                  <Font name="Poppins Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane fx:id="SideMenu1" layoutY="52.0" prefHeight="669.0" prefWidth="276.0" visible="false">
+         <children>
+            <AnchorPane prefHeight="669.0" prefWidth="276.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#db4249" height="670.0" layoutX="-6.0" stroke="#db4249" strokeType="INSIDE" width="280.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e3b58" height="50.0" layoutX="-3.0" stroke="BLACK" strokeType="INSIDE" width="276.0" />
+                  <Button fx:id="btnPlats" alignment="CENTER" cacheShape="false" focusTraversable="false" graphicTextGap="0.0" layoutX="11.0" layoutY="162.0" mnemonicParsing="false" onAction="#launchMenu_Plat" prefHeight="30.0" prefWidth="255.0" scaleShape="false" style="-fx-background-radius: 30;" styleClass="hover-button" stylesheets="@Style.CSS" text="Plats" textAlignment="CENTER" textFill="#f8f8f8" textOverrun="LEADING_ELLIPSIS">
+                     <font>
+                        <Font name="Poppins Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <opaqueInsets>
+                        <Insets right="50.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="btnCommande" alignment="CENTER" cacheShape="false" focusTraversable="false" graphicTextGap="0.0" layoutX="11.0" layoutY="201.0" mnemonicParsing="false" onAction="#launchMenu_Commande" prefHeight="30.0" prefWidth="255.0" scaleShape="false" style="-fx-background-radius: 30;" styleClass="hover-button" stylesheets="@Style.CSS" text="Commande" textAlignment="CENTER" textFill="#f8f8f8" textOverrun="LEADING_ELLIPSIS">
+                     <font>
+                        <Font name="Poppins Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <opaqueInsets>
+                        <Insets right="50.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="btnCompte" alignment="CENTER" cacheShape="false" focusTraversable="false" graphicTextGap="0.0" layoutX="11.0" layoutY="239.0" mnemonicParsing="false" onAction="#launchMenu_Compte" prefHeight="30.0" prefWidth="255.0" scaleShape="false" style="-fx-background-radius: 30;" styleClass="hover-button" stylesheets="@Style.CSS" text="Compte" textAlignment="CENTER" textFill="#f8f8f8" textOverrun="LEADING_ELLIPSIS">
+                     <font>
+                        <Font name="Poppins Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <opaqueInsets>
+                        <Insets right="50.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="btnStats" alignment="CENTER" cacheShape="false" focusTraversable="false" graphicTextGap="0.0" layoutX="11.0" layoutY="617.0" mnemonicParsing="false" onAction="#launchMenu_Stats" prefHeight="30.0" prefWidth="255.0" scaleShape="false" style="-fx-background-radius: 30;" styleClass="hover-button" stylesheets="@Style.CSS" text="Stats" textAlignment="CENTER" textFill="#f8f8f8" textOverrun="LEADING_ELLIPSIS">
+                     <font>
+                        <Font name="Poppins Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <opaqueInsets>
+                        <Insets right="50.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="btnGestion_Menu" alignment="CENTER" cacheShape="false" focusTraversable="false" graphicTextGap="0.0" layoutX="11.0" layoutY="124.0" mnemonicParsing="false" onAction="#launchMenu_MenuGestionMenuQuotidien" prefHeight="30.0" prefWidth="255.0" scaleShape="false" style="-fx-background-radius: 30;" styleClass="hover-button" stylesheets="@Style.CSS" text="Gestion Menu Quotidien" textAlignment="CENTER" textFill="#f8f8f8" textOverrun="LEADING_ELLIPSIS">
+                     <font>
+                        <Font name="Poppins Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <opaqueInsets>
+                        <Insets right="50.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="btnMenuQuotidien" alignment="CENTER" cacheShape="false" focusTraversable="false" graphicTextGap="0.0" layoutX="11.0" layoutY="79.0" mnemonicParsing="false" onAction="#launchMenu_MenuQuotidien" prefHeight="36.0" prefWidth="255.0" scaleShape="false" style="-fx-background-radius: 30;" styleClass="hover-button" stylesheets="@Style.CSS" text="Menu Quotidien" textAlignment="CENTER" textFill="#f8f8f8" textOverrun="LEADING_ELLIPSIS">
+                     <font>
+                        <Font name="Poppins Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <opaqueInsets>
+                        <Insets right="50.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <Label layoutX="86.0" layoutY="8.0" prefHeight="35.0" prefWidth="105.0" text="Uni Eats" textFill="#e1dbdb">
+                     <font>
+                        <Font name="Poppins Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <Pane fx:id="SideMenu2" layoutX="1007.0" layoutY="52.0" prefHeight="669.0" prefWidth="276.0" visible="false">
+         <children>
+            <AnchorPane prefHeight="669.0" prefWidth="276.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#db4249" height="670.0" layoutX="-6.0" stroke="#db4249" strokeType="INSIDE" width="280.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e3b58" height="50.0" layoutX="-7.0" stroke="BLACK" strokeType="INSIDE" width="280.0" />
+                  <Button fx:id="btnDeconnecter" alignment="CENTER" cacheShape="false" focusTraversable="false" graphicTextGap="0.0" layoutX="11.0" layoutY="617.0" mnemonicParsing="false" onAction="#handleDeconnection" prefHeight="30.0" prefWidth="255.0" scaleShape="false" style="-fx-background-radius: 30;" styleClass="hover-button" stylesheets="@Style.CSS" text="Se Deconnecter" textAlignment="CENTER" textFill="#f8f8f8" textOverrun="LEADING_ELLIPSIS">
+                     <font>
+                        <Font name="Poppins Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <opaqueInsets>
+                        <Insets right="50.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="btnDetails" alignment="CENTER" cacheShape="false" focusTraversable="false" graphicTextGap="0.0" layoutX="11.0" layoutY="79.0" mnemonicParsing="false" onAction="#launchMenu_DetailCompte" prefHeight="30.0" prefWidth="255.0" scaleShape="false" style="-fx-background-radius: 30;" styleClass="hover-button" stylesheets="@Style.CSS" text="  Details Du Compte" textAlignment="CENTER" textFill="#f8f8f8" textOverrun="LEADING_ELLIPSIS">
+                     <font>
+                        <Font name="Poppins Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <opaqueInsets>
+                        <Insets right="50.0" />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <Pane fx:id="SideMenu3" layoutX="1017.0" layoutY="52.0" prefHeight="669.0" prefWidth="295.0" visible="false">
+         <children>
+            <AnchorPane prefHeight="669.0" prefWidth="276.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#db4249" height="670.0" layoutX="-130.0" stroke="#db4249" strokeType="INSIDE" width="404.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e3b58" height="50.0" layoutX="-130.0" stroke="BLACK" strokeType="INSIDE" width="404.0" />
+                  <Button fx:id="ConfirmerPanier" alignment="CENTER" cacheShape="false" focusTraversable="false" graphicTextGap="0.0" layoutX="11.0" layoutY="617.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="255.0" scaleShape="false" style="-fx-background-radius: 30;" styleClass="hover-button" stylesheets="@Style.CSS" text="Confirmer" textAlignment="CENTER" textFill="#f8f8f8" textOverrun="LEADING_ELLIPSIS">
+                     <font>
+                        <Font name="Poppins Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <opaqueInsets>
+                        <Insets right="50.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="AnnulerPanier" alignment="CENTER" cacheShape="false" focusTraversable="false" graphicTextGap="0.0" layoutX="-127.0" layoutY="617.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" scaleShape="false" style="-fx-background-radius: 30;" styleClass="hover-button" stylesheets="@Style.CSS" text="Clear" textAlignment="CENTER" textFill="#f8f8f8" textOverrun="LEADING_ELLIPSIS">
+                     <font>
+                        <Font name="Poppins Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <opaqueInsets>
+                        <Insets right="50.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <Label layoutX="11.0" layoutY="-1.0" text="Panier" textFill="#f2f2f2">
+                     <font>
+                        <Font name="Poppins Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="50.0" arcWidth="40.0" fill="#2e3b58" height="41.0" layoutX="8.0" layoutY="565.0" stroke="BLACK" strokeType="INSIDE" width="261.0" />
+                  <Rectangle arcHeight="50.0" arcWidth="40.0" fill="#2e3b58" height="41.0" layoutX="-128.0" layoutY="565.0" stroke="BLACK" strokeType="INSIDE" width="129.0" />
+                  <Label layoutX="-90.0" layoutY="572.0" text="Totale" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="206.0" layoutY="572.0" text="DH" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Totalepanier" layoutX="61.0" layoutY="572.0" text="TotalePanier" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="panier" layoutX="-95.0" layoutY="66.0" prefHeight="491.0" prefWidth="344.0" stylesheets="@TABLES.css">
+                     <columns>
+                        <TableColumn fx:id="nom" prefWidth="144.0" text="Nom" />
+                        <TableColumn fx:id="quantiter" prefWidth="119.0" text="Quantité" />
+                        <TableColumn fx:id="prix" text="Prix" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+    </children>
+</Pane>

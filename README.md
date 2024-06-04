@@ -7,7 +7,7 @@ Une Application de Gestion de Restaurant Universitaire
 ### Interface Login
 L’utilisateur peut entrer ses identifiants (nom d’utilisateur et mot de passe) pour se connecter, que ce soit en tant qu’administrateur ou client.
 Si l’utilisateur ne dispose pas de compte, il peut appuyer sur "Create one" pour en créer un, mais seulement pour les utilisateurs ordinaires. Les autres comptes sont tous créés par l’administrateur.
-![Interface Login](C:\Users\HP\Downloads\Interfaces_UniEats\login.png)
+![Interface Login](/Interfaces_UniEats/login.png)
 
 ### Interface SignUp
 L’utilisateur peut entrer les informations nécessaires et appuyer sur le bouton "Sign up" pour créer son compte.
